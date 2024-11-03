@@ -5,7 +5,7 @@ import Email from '../component/Email';
 import Password from '../component/Password';
 import LogInButton from '../component/LogInButton';
 import RegisterButton from '../component/RegisterButton';
-import ForgetPasswordInLoginPage from '../component/ForgetPasswordInLoginPage'; // Update the import
+import ForgetPasswordInLoginPage from '../component/ForgetPasswordInLoginPage'; 
 import { useNavigation } from '@react-navigation/native';
 
 const Login = () => {

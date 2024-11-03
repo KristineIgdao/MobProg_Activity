@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#EDE8DC', // Adjust background color as needed
+    backgroundColor: '#EDE8DC', 
     
   },
 });

@@ -10,13 +10,13 @@ const RegisterUserName = () => (
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center', // Center content horizontally
-    width: '100%', // Make sure it takes full width
+    alignItems: 'center', 
+    width: '100%', 
   },
   title: {
-    fontSize: 20, // Adjust font size as needed
-    fontWeight: 'bold', // Make the text bold
-    marginBottom: 10, // Space between title and input
+    fontSize: 20, 
+    fontWeight: 'bold', 
+    marginBottom: 10, 
   },
   input: {
     width: '100%',
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#000000',
     marginVertical: 10,
+    marginBottom: 20,
   },
 });
 

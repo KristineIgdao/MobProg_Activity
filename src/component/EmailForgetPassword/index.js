@@ -19,15 +19,15 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   title: {
-    fontSize: 16, // Adjust font size as needed
-    fontWeight: 'bold', // Make the text bold
-    marginBottom: 5, // Space between title and input
-    textAlign: 'center', // Center the text
+    fontSize: 16, 
+    fontWeight: 'bold', 
+    marginBottom: 15, 
+    textAlign: 'center', 
   },
   input: {
     borderWidth: 1,
-    padding: 10,
-    borderRadius: 5,
+    padding: 15,
+    borderRadius: 25,
     width: '100%',
     borderColor: '#000000',
     fontWeight: 'bold',
