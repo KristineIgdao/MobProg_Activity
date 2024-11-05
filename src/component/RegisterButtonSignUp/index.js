@@ -18,7 +18,7 @@ const RegisterButtonSignUp = () => (
         <MaterialCommunityIcons name="google" size={25} color="#db4a39" style={styles.icon} />
       </TouchableOpacity>
       <TouchableOpacity>
-        <MaterialCommunityIcons name="twitter" size={25} color="#1DA1F2" style={styles.icon} />
+        <MaterialCommunityIcons name="instagram" size={25} color="#C13584" style={styles.icon} />
       </TouchableOpacity>
     </View>
   </View>
@@ -36,13 +36,14 @@ const styles = StyleSheet.create({
     width: 130,
     alignItems: 'center',
     marginVertical: 10,
+    marginBottom: 30,
   },
   buttonText: {
     color: '#fff',
     fontWeight: 'bold',
   },
   orText: {
-    marginVertical: 10,
+    marginBottom: 25,
     fontSize: 16,
     color: '#000', 
   },

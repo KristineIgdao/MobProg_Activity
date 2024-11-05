@@ -1,28 +1,30 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 
-const RegisterButton = ({ onPress }) => {
+const RegisterText = ({ onPress }) => {
   return (
-    <TouchableOpacity style={styles.button} onPress={onPress}>
-      <Text style={styles.buttonText}>Register</Text>
-    </TouchableOpacity>
+    <View style={styles.container}>
+      <Text style={styles.text}>Don't have an account? </Text>
+      <TouchableOpacity onPress={onPress}>
+        <Text style={styles.link}>Register</Text>
+      </TouchableOpacity>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  button: {
-    backgroundColor: '#800000',
-    padding: 15,
-    borderRadius: 25,
-    width: 130,
+  container: {
+    flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 10,
-    
+    marginTop: 20,
   },
-  buttonText: {
-    color: '#fff',
+  text: {
+    color: '#000', 
+  },
+  link: {
+    color: 'blue', 
     fontWeight: 'bold',
   },
 });
 
-export default RegisterButton;
+export default RegisterText;

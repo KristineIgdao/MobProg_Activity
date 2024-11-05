@@ -9,12 +9,12 @@ const Avatar = () => (
 
 const styles = StyleSheet.create({
   avatarContainer: {
-    width: 180,  
-    height: 180, 
+    width: 100,  
+    height: 100, 
     backgroundColor: '#EDE8DC',
-    borderWidth: 12,
+    borderWidth: 2,
     borderColor: '#654520', 
-    borderRadius: 100, 
+    borderRadius: 50, 
     justifyContent: 'center',
     alignItems: 'center',
     overflow: 'hidden',
@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   avatar: {
-    width: 150, 
-    height: 150, 
-    borderRadius: 20,
+    width: 100, 
+    height: 100, 
+    borderRadius: 5,
   },
 });
 

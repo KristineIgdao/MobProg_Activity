@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
 const RegisterReEnterPassword = () => (
-  <TextInput style={styles.input} placeholder="Re-Enter Password" secureTextEntry />
+  <TextInput style={styles.input} placeholder="Confirm Password" secureTextEntry />
 );
 
 const styles = StyleSheet.create({
