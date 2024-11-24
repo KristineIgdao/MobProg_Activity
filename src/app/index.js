@@ -6,11 +6,11 @@ import Password from '../component/Password';
 import LogInButton from '../component/LogInButton';
 import ForgetPasswordInLoginPage from '../component/ForgetPasswordInLoginPage';
 import RegisterButton from '../component/RegisterButton';
-import { useNavigation } from '@react-navigation/native';
+import { useRouter } from 'expo-router';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Login = () => {
-  const navigation = useNavigation();
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
@@ -19,10 +19,8 @@ const Login = () => {
       <Text style={styles.subtitle}>Login to continue using the app</Text>
       <Email />
       <Password />
-      <ForgetPasswordInLoginPage
-        onPress={() => navigation.navigate('ForgetPassword')}
-      />
-      <LogInButton />
+      <ForgetPasswordInLoginPage onPress={() => router.push('/ForgetPassword')} />
+      <LogInButton onPress={() => router.replace('/dashboard')} />
       <View style={styles.socialContainer}>
         <Text style={styles.orText}>OR</Text>
         <View style={styles.iconContainer}>
@@ -31,7 +29,7 @@ const Login = () => {
           <MaterialCommunityIcons name="instagram" size={30} color="#C13584" />
         </View>
       </View>
-      <RegisterButton onPress={() => navigation.navigate('Register')} />
+      <RegisterButton onPress={() => router.push('/Register')} />
     </View>
   );
 };
