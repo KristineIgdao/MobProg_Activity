@@ -3,23 +3,20 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image, Alert } fro
 import * as ImagePicker from 'expo-image-picker';
 
 const UserProfile = () => {
-  const [name, setName] = useState('Kristine');
-  const [email, setEmail] = useState('KristineIgdao@gmail.com');
+  const [name, setName] = useState('Kapee');
+  const [email, setEmail] = useState('kapeelover@gmail.com');
   const [phone, setPhone] = useState('09759303797');
   const [avatar, setAvatar] = useState(require('../../assets/kapee.png'));
   const [isEditing, setIsEditing] = useState(false);
 
-  
   const toggleEdit = () => {
     setIsEditing(!isEditing);
   };
 
-  
   const saveProfile = () => {
     setIsEditing(false);
   };
 
-  
   const changeAvatar = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
 
@@ -29,7 +26,7 @@ const UserProfile = () => {
     }
 
     const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      mediaTypes: ImagePicker.MediaType.Images,  // Updated to use the new API
       allowsEditing: true,
       aspect: [1, 1],
       quality: 1,
@@ -44,7 +41,6 @@ const UserProfile = () => {
     <View style={styles.container}>
       <Text style={styles.header}>Profile</Text>
 
-      
       <View style={styles.avatarRow}>
         <TouchableOpacity onPress={changeAvatar}>
           <Image
@@ -55,7 +51,6 @@ const UserProfile = () => {
         <Text style={styles.welcomeText}>Welcome, {name}!</Text>
       </View>
 
-      
       <Text style={styles.label}>Name:</Text>
       <TextInput
         style={[styles.input, isEditing ? styles.editable : styles.nonEditable]}
@@ -82,7 +77,6 @@ const UserProfile = () => {
         keyboardType="phone-pad"
       />
 
-      
       <TouchableOpacity style={styles.button} onPress={isEditing ? saveProfile : toggleEdit}>
         <Text style={styles.buttonText}>{isEditing ? 'Save' : 'Edit Profile'}</Text>
       </TouchableOpacity>

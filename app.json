@@ -2,7 +2,7 @@
   "expo": {
     "name": "LogIn",
     "slug": "LogIn",
-    "scheme":"com.LogIn.app",
+    "scheme": "com.LogIn.app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,6 +26,7 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "newArchEnabled": true 
   }
 }

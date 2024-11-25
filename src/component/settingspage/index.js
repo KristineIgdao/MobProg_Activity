@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
       alignSelf: 'center', 
       marginBottom: 10,
       marginTop: 20,
-      width: 200, 
+      width: 150, 
     },
     logoutText: {
       color: '#FFF',
